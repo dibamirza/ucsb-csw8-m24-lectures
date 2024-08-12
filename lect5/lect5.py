@@ -1,20 +1,23 @@
 # Lecture 5 Topics (zybook 2.11 - 2.13 )
-# writing modular code with functions
+# Print vs. return, developing code iteratively with functions, boolean expressions and logical operators
 # Python Tutor: https://pythontutor.com/
 # Print vs. return
 
-# DRY!: Don't Repeat Yourself!
-# Problem 1: Is a number divisible by another number?
-# "stub": skeleton of the function
-# Defining the function
+# Problem 1: write a function that checks if a number is even
+# stub of the function
 
-
+def isEven(num):
+    ''' returns True if the num is Even, False otherwise'''
+    return num % 2 == 0 
 
 
 # Problem 2: Is a number within a given range?
 def is_inrange(num, min_limit, max_limit):
   ''' returns True if num is in the range [min_limit, max_limit]'''
   pass
+
+a = 11
+print(f"Is {a} between 0 and 10?", is_inrange(a, 0, 10) )
 
 
 # Problem 3: Does a word contain a vowel?
@@ -26,9 +29,6 @@ def min3(x, y, z):
   '''returns minimum of x, y, z'''
   pass
   
-
-
-# if _name_ == "_main_":
 # One approach using if-else and nested if-else statements
 a = 10
 b = -30
@@ -36,14 +36,6 @@ c = 5
 print(f"min({a}, {b}, {c}) is:", min3(a, b, c))
 
 
-
-# print(f"Is {11} divisible by 3?", is_divisible(11, 3)) # calling the function
-# print(f"Is {4} divisible by 3?", is_divisible(4, 3)) # calling the function
-
-
-
-# a = 11
-# print(f"Is {a} between 0 and 10?", is_inrange(a, 0, 10) )
 
 # # Be careful about using logic operators in Boolean expression
 # # Common errors!
@@ -61,15 +53,14 @@ print(f"min({a}, {b}, {c}) is:", min3(a, b, c))
 
 # # Which Boolean expression answers the question:
 # # Is 'a' or 'e' in word? (Note: word could be anything!)
-# # A. ("a") or ("e" in word) # Always True because True or anythin is True
-# # B. ("a" in word) or ("e" in word) # Correct
+# # A. ("a") or ("e" in word) 
+# # B. ("a" in word) or ("e" in word) 
 # # C. Both A and B are correct
 # # print(f"Does {word} contain the letter 'a' or 'e'?")
 
 
 # word = "erudite"
-# # Which a Boolean expression that is true is word contains a vowel
-# # false otherwise
+# # Which a Boolean expression that evaluates to true is=f word contains a vowel and false otherwise
 # print(f"Does {word} contain a vowel?", has_vowel("erudite"))
 # print(f"Does {word} contain a vowel?", has_vowel(word))
 # # Does word contain any of "a" , "e", "i", "o", "u"
@@ -80,7 +71,3 @@ print(f"min({a}, {b}, {c}) is:", min3(a, b, c))
 # y = -30
 # print(f"min({x}, {y}) is:", min(x, y))
 
-# # # Work to finish on your own zybook 2.13 - 2.20
-# # # zyLab 2.14: Area of a circle
-# # # zyLab 2.20: min and max of 4 number
-# # # SECTION GROUP ACTIVITY: zyLab 2.21: Write a program to calculate U.S. income tax owed (read the description before section)
