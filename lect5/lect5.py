@@ -1,5 +1,6 @@
 # Lecture 5 Topics (zybook 2.11 - 2.13 )
-# Print vs. return, developing code iteratively with functions, boolean expressions and logical operators
+# Boolean expressions and logical operators
+# Functions that answer yes/no questions
 # Python Tutor: https://pythontutor.com/
 
 # Problem 1: write a function that checks if a number is even
