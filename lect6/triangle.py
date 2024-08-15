@@ -6,9 +6,11 @@
 # How do I get started?
 # How do I develop a piece of logic for my function or my program ?
 # How do I know my code is correct? How do I know if my code is optimal
-# Python concepts - if-else , import
+
 
 # To answer the above questions, we will compose the solution to the following problem using test-driven development!
+# Along the way, we'll learn about a few more Python concepts: 
+# boolean expressions, logical and relational operators, control structure: if, if-else, if-elif-else, and import
 
 # Problem: "Triangle Type Checker"
 # Problem Statement:
