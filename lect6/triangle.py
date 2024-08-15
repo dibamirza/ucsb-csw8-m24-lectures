@@ -8,8 +8,8 @@
 # How do I know my code is correct? How do I know if my code is optimal
 # Python concepts - if-else , import
 
-# To answer the above questions we composed the solution to the following problem
-# The process is a demonstration of test driven development!
+# To answer the above questions, we will compose the solution to the following problem using the process of test-driven development!
+
 # Problem: "Triangle Type Checker"
 # Problem Statement:
 # Write a program that determines the type of a triangle (Equilateral, Isosceles, or Scalene)  based on the lengths of its sides. 
@@ -18,15 +18,15 @@
 
 
 # Q1. How do I get started?
-# Identify the inputs and outputs of this program
+# Identify the inputs and outputs of the program
 # Inputs - 3 numbers
-# Output - Print to terminal, one of 4 possiblities: Invalid Triangle, Equilateral, Isosceles, or Scalene
+# Output - Print to terminal one of 4 possibilities: Invalid Triangle, Equilateral, Isosceles, or Scalene
 
-# What are the sub problems?
+# What are the subproblems?
 # sub problem 1. checking if the triangle is valid
 # sub problem 2. Given a valid triangle, then figuring out the type (Equilateral, Isosceles, or Scalene)
 
-# Write the stub of each function that would solve each of the sub problems
+# Write the stub of each function that would solve each of the sub-problems
 # Q2: How do I figure out the logic for my function?
 # Test-driven development!
 # Come up with logic in small iterative steps by thinking about how we would actually test the function on different inputs
@@ -42,8 +42,8 @@ def is_valid_triangle(a, b, c):
 
 def get_triangle_type(a, b, c):
     ''' inputs a,b,c are three floating point numbers that represent the lengths of the sides of a VALID triangle
-        return the type of the triangle which is a string which is one of Equilateral, Isosceles, or Scalene'''
-    # output is one of 3 possibilities
+        return the type of the triangle, which is a string which is one of Equilateral, Isosceles, or Scalene'''
+    # Output is one of 3 possibilities (each is a value that the function returns
     if a == b and b == c: # check for all sides being equal
         return "Equilateral"
     elif a == b or b==c or c==a:   # Any two sides should be equal
@@ -51,8 +51,10 @@ def get_triangle_type(a, b, c):
     else:
         return "Scalene"
 
-print("triangle.py is", __name__) # when we import this file, __name__ gets the value that is the name of the file without.py extension!
-# Read in the three numbers
+# print("triangle.py is ", __name__) # when we import this file (triangle.py), __name__ == "triangle" i.e.  the name of this file without the .py extension!
+# On the other hand, when we run this file as the "main program", __name__ == "__main__"
+# We can use this fact to conditionally execute the code below. That way when we are testing the individual functions, the program doesn't stall by waiting for user input
+
 if __name__ == "__main__":
     x = float(input("Enter the length of the first side: "))
     y = float(input("Enter the length of the second side: "))
