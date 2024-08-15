@@ -1,6 +1,6 @@
 # Lecture 6
-# trangle.py : To run this file from the Console type 
-# python triangle.py
+# trangle.py 
+# To run this file from the console type: python triangle.py
 
 # Questions from you!
 # How do I get started?
