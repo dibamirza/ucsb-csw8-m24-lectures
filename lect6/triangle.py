@@ -8,7 +8,7 @@
 # How do I know my code is correct? How do I know if my code is optimal
 # Python concepts - if-else , import
 
-# To answer the above questions, we will compose the solution to the following problem using the process of test-driven development!
+# To answer the above questions, we will compose the solution to the following problem using test-driven development!
 
 # Problem: "Triangle Type Checker"
 # Problem Statement:
