@@ -1,5 +1,4 @@
-# Lecture 4: Functions
-# Lecture 4: Functions
+# Lecture 4: Functions: defining a function, calling a function
 # Make or write a function 
 # Defining a function
 def f(x):
