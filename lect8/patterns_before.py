@@ -1,7 +1,7 @@
 # # By the end of this lecture you should be able to complete zyLab 3.14
 # # and complete zyLab 3.18 in three different ways
 
-# # Topic Patterns in programming involving loops
+# # Programming patterns involving loops
 
 # # Problem 1: Write your own implementation of Python's sum function
 def mysum(lst):
