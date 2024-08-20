@@ -37,13 +37,8 @@ def countOddNumber(lst):
   return 0
 
 
-# Problem 4: Return the longest word in a list of words
-def longestWord(lst):
-  '''@param lst: list of words (strings)
-    returns the longest word in the list'''
-  return 42
 
-# Problem 5: Return a list with only the positive numbers
+# Problem 4: Return a list with only the positive numbers
 def getPositive(lst):
     '''param lst is a list
        return a new list that contains only positive numbers
