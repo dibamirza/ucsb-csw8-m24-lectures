@@ -1,30 +1,6 @@
 # To install PIL, type `pip install pillow` in the console
 from PIL import Image
 
-def firstDraw():
-    pic = Image.new('RGB', (200, 400), (255, 255, 255))
-    # write some code
-    # for loop!!!!
-    for x in range(pic.size[0]):
-        # x is the loop variable 
-        # Inside the for loop, this code is going to run over and over again
-        print(x)
-        pic.putpixel((x,0), (100, 100, 100))
-
-    # pic.putpixel((0,0), (100, 100, 100))
-    # pic.putpixel((1,0), (100, 100, 100))
-    # pic.putpixel((2,0), (100, 100, 100))
-    # pic.putpixel((3,0), (100, 100, 100))
-    # pic.putpixel((4,0), (100, 100, 100))
-    # pic.putpixel((5,0), (100, 100, 100))
-    # pic.putpixel((6,0), (100, 100, 100))
-    # pic.putpixel((199, 399), (255, 0, 0))
-    # save the image
-    pic.save("mycanvas.jpg")
-
-
-firstDraw()
-
 # Open an existing image file
 pic = Image.open("butterfly.jpg")
 
