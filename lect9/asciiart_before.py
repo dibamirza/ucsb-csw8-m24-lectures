@@ -6,6 +6,20 @@
 # # 1. Draw a rectangle, given its width and height
 # # 2. Draw the letter C, given its width and height
 
+# Review of the accumulator pattern
+
+def message():
+    '''What does this function return?'''
+    sentence_list = ['Hello', 
+                     'fellow coder!',
+                     'Remember to take short breaks when coding!']
+    result = ""
+    for elem in sentence_list:
+        result += elem + "\n"
+    
+    return result
+
+print(message())
 
 # 1. Write a function that returns a rectangle of *'s', given its width and height
 def getRectangle(width, height):
