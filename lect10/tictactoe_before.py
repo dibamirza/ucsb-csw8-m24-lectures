@@ -7,3 +7,13 @@
 
 # Prompt:
 # I want to work on three functions related to tic tac toe game, one that prints the board, another that updates the board and one that determines whether a winning configuration was attained. Give me the stub of each function in python
+
+def print_board(board):
+  '''prints the board in the following format
+     X | . | O 
+    ---+---+---
+     O | . | .  
+    ---+---+---
+     . | . | X 
+  '''
+  return
