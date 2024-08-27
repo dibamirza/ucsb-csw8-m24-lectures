@@ -18,7 +18,7 @@ def print_board(board):
             print("---+---+---")
 
     return
-# Nested or 2D list vs simple string representation 
+# In the last lecture we explored the tradeoffs between representing the board using a nested/2D list vs string  
 board = [['X', 'X', 'O'], 
          ['O', 'O', 'X'], 
          ['O', 'X', 'O']]
