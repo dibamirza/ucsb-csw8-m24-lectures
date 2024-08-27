@@ -10,8 +10,9 @@ def print_board(board):
         . | . | X 
     '''
     # Solve the fencepost problem
-    for i, row in enumerate(board): # row is the loop variable and in the past it has been an int or a string
-       # print(type(row)) # Debugging statement!!!!
+    for i, row in enumerate(board): # i is the index of row in board
+       # enumerate(board) is a way of iterating through the board where in each iteration you get the elem (row) and its index (i)
+       # Note we could have used range to make this work in which case the loop variable would only be the index and not the value
         print(f" {row[0]} | {row[1]} | {row[2]}")
         if i < 2 :
             print("---+---+---")
