@@ -57,7 +57,7 @@ def print_board_v1(board):
        ---+---+---
         . | . | X 
     '''
-    # Solve the dencepost problem
+    # Solve the fencepost problem
     for i, row in enumerate(board): # row is the loop variable and in the past it has been an int or a string
        # print(type(row)) # Debugging statement!!!!
         print(f" {row[0]} | {row[1]} | {row[2]}")
@@ -74,7 +74,7 @@ def print_board(board):
        ---+---+---
         . | . | X 
     '''
-    # Solve the dencepost problem
+    # Solve the fencepost problem
     separator = " | "
     divider = "---+---+---"
     for i, row in enumerate(board): # row is the loop variable and in the past it has been an int or a string
