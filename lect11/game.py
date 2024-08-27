@@ -42,8 +42,8 @@ board = [['X', 'X', 'O'],
 
 # Representation!!
 # Board: 2D list
-# Player: string (Player1 = 'X' and  Player2 = 'O' Players are strings)
-# Current player 
+# Player: string (Player1 = 'X' and  Player2 = 'O')
+# Current player: string 'X' or 'O'
 # Move: Tuple of ints (row, col) 
 
 # Single instance !!
