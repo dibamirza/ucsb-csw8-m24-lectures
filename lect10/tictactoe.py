@@ -1,13 +1,17 @@
 # tic tac toe game dev
-# Lecture 10: Representing components of a tictactoe game in code, Lists and multability
+# Lecture 10: Representing components of a tictactoe game in code, nested lists and mutability
 
 
-# Last lecture you explored the following questions on your own
-# Prompt: I want to develop a tic tac toe game, how should I represent the board and why?
-# How do we represent a tictactoe and why?
+# Last lecture we explored the following questions with the help of the AI chatbot
+# Today, we'll revisit these questions and discuss it more deeply to learn about
+# representing things in code using different types (strings, lists, 2D lists, etc) and the tradeoffs involved
+# learning to iterate through nested (or 2D) lists in different ways, indexing, and modifying nested lists
+
+# Prompt: I want to develop a tic-tac-toe game. How should I represent the board, and why?
+
 def mutability():
-    '''Explore the tradeoffs between a string vs. list representaton of a board, 2D lists, and mutability'''
-    sboard = "X.O\nO..\n..X" # string representation # Strings are immulatble
+    '''Explore the tradeoffs between a string vs. list representation of a board, 2D lists, and mutability'''
+    sboard = "X.O\nO..\n..X" # string representation # Strings are immutable
     print(sboard)
     # Cannot change a particular character in the board easily if the board is a string!!!
 
@@ -18,7 +22,7 @@ def mutability():
     print(lboard)
     lboard[6] ='X'
     print(lboard)
-    #lboard[1][2] ='X' # Would it be nicer if I can index into the board this way??????
+    #lboard[1][2] ='X' # Would it be nicer if I could index into the board this way??????
 
     matrix = [[1, 2, 3],
                [4, 5, 6],
@@ -32,7 +36,10 @@ def mutability():
     matrix[0][2] = 10
     print(matrix)
 # Prompt:
-# I want to work on three functions related to tic tac toe game, one that prints the board, another that updates the board and one that determines whether a winning configuration was attained. Give me the stub of each function in python
+# I want to work on three functions related to the tic tac toe game: 
+# one that prints the board, another that updates the board, 
+# and one that determines whether a winning configuration was attained. 
+# Give me the stub of each function in Python
 
 def print_board_v0(board):
     '''prints the board in the following format
@@ -42,7 +49,9 @@ def print_board_v0(board):
        ---+---+---
         . | . | X 
     '''
-    for row in board: # row is the loop variable and in the past it has been an int or a string
+    for row in board: # row is the loop variable --in the past, loop variables have been an int or a string, 
+                      # but here it (row) is a list because each element of the board is a list.
+                      # To check that the type of the variable row is a list, print its type within the loop (see next statement)
        # print(type(row)) # Debugging statement!!!!
         print(f" {row[0]} | {row[1]} | {row[2]}")
         print("---+---+---")
@@ -58,8 +67,9 @@ def print_board_v1(board):
         . | . | X 
     '''
     # Solve the fencepost problem
-    for i, row in enumerate(board): # row is the loop variable and in the past it has been an int or a string
-       # print(type(row)) # Debugging statement!!!!
+    for i, row in enumerate(board): # i is the index of row in board
+       # enumerate(board) is a way of iterating through the board where in each iteration you get the elem (row) and its index (i)
+       # Note we could have used range to make this work in which case the loop only gives the index and not the value
         print(f" {row[0]} | {row[1]} | {row[2]}")
         if i < 2 :
             print("---+---+---")
@@ -77,8 +87,9 @@ def print_board(board):
     # Solve the fencepost problem
     separator = " | "
     divider = "---+---+---"
-    for i, row in enumerate(board): # row is the loop variable and in the past it has been an int or a string
-       # print(type(row)) # Debugging statement!!!!
+    for i, row in enumerate(board): # i is the index of row in board
+       # enumerate(board) is a way of iterating through the board where in each iteration you get the elem (row) and its index (i)
+       # Note we could have used range to make this work in which case the loop only gives the index and not the value
         print(f" {separator.join(row)}")
         if i < 2 :
             print(divider)
@@ -92,10 +103,7 @@ board = [['X', '.', 'O'],
 # board[0][1] = 'X'
 print_board(board)
 row = board[0]
-#print(row)
+# print(row)
 # print(" | ".join(row))
 
-# Try writing the stub of other functions that would be useful in the game!
-def win(board):
-    ''' fill in the stub'''
 
