@@ -1,10 +1,44 @@
 # Lecture 16: Recursion, zybook 6.1 - 6.3
+# Review of function calling another function
+def happy(message):
+    print(message)
+
+def sing(P, msg):
+    happy(msg)
+    happy(msg)
+    print("Happy Birthday dear " + P + "!")
+    happy(msg)
+
+# main
+sing("Fred", "Happy Birthday to you!")
+
+
+
+#zybook CA 6.1.1
+# Write a statement that calls the recursive function backwards_alphabet() with input starting_letter.
+def backwards_alphabet(curr_letter):
+    if curr_letter == 'a':
+        print(curr_letter)
+    else:
+        print(curr_letter)
+        prev_letter = chr(ord(curr_letter) - 1)
+        backwards_alphabet(prev_letter)
+
+starting_letter = input()
+
 
 def fac(n):
     """
     returns the factorial of n
     """
     pass
+
+#zybook PA 6.1
+def countDown(n):
+    ''' print values n n-1 n-2 ... 1 Go!
+        n = 3
+        print 3 2 1 Go!
+    '''
 
 def sumListRecursive(lst):
     ''' :param lst is a list containing integer values
@@ -51,6 +85,7 @@ def sumListIterative(lst):
 
 
 
+
 #zybook inclass activity 6.7
 def reverseDigits( num ):
     """
@@ -86,13 +121,6 @@ def reverseDigits( num ):
 # reverseDigits(1209508)
 
 
-
-#zybook 6.1
-def countDown(n):
-    ''' print values n n-1 n-2 ... 1 Go!
-        n = 3
-        print 3 2 1 Go!
-    '''
 
     
     
