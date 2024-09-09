@@ -86,7 +86,7 @@ def sumListIterative(lst):
 
 
 
-#zybook inclass activity 6.7
+#zybook inclass activity
 def reverseDigits( num ):
     """
     Reverse the digits of an 
