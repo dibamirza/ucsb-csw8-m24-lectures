@@ -26,7 +26,7 @@ sing("Fred", "Happy Birthday to you!")
 #    Happy Birthday dear Fred!
 #    Happy Birthday to you!
 
-# E.   Error: cannot call happy() function inside sing() function
+# E. Error: cannot call happy() function inside sing() function
 
 
 #zybook CA 6.1.1
