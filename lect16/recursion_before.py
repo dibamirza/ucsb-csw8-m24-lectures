@@ -12,6 +12,21 @@ def sing(P, msg):
 # main
 sing("Fred", "Happy Birthday to you!")
 
+# What is the output?
+
+# A. Happy Birthday to you!
+
+# B. Happy Birthday dear Fred!
+
+# C. Happy Birthday to you!
+#    Happy  Birthday to you!
+
+# D. Happy Birthday to you!
+#    Happy  Birthday to you!
+#    Happy Birthday dear Fred!
+#    Happy Birthday to you!
+
+# E.   Error: cannot call happy() function inside sing() function
 
 
 #zybook CA 6.1.1
